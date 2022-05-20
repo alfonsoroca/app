@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity"
+    android:background="@color/color_background">
+
+
+    <RelativeLayout
+        style="@style/headerRLO"
+        android:id="@+id/registrationRL"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/header"
+            android:text="Registro" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/dateNowTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="FECHA"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registrationRL"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/inputTimeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="ENTRADA: "
+        android:textColor="@color/green"
+        android:textSize="32sp"
+        app:layout_constraintTop_toBottomOf="@+id/dateNowTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/outputTimeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="SALIDA: "
+        android:textColor="@color/color_red"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputTimeTV"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/timeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="HORA"
+        android:textColor="@color/color_primary_dark"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outputTimeTV"
+        android:layout_marginTop="32dp"/>
+
+    <Button
+        android:id="@+id/changeTimeButton"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button_round_orange"
+        android:text="Cambiar hora"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeTV"
+        android:layout_marginTop="32dp" />
+
+    <ImageButton
+        android:id="@+id/timeInButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/reg_entry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changeTimeButton"
+        android:layout_marginTop="32dp" />
+
+    <ImageButton
+        android:id="@+id/timeOutButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/reg_out"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changeTimeButton"
+        android:layout_marginTop="32dp" />
+
+    <Button
+        android:id="@+id/backMenuRegistrationBT"
+        android:layout_width="271dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/roboto"
+        android:background="@drawable/button_round_dark"
+        android:text="volver al menu"
+        android:textColor="@color/color_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeOutButton" />
+
+    <TextView
+        android:id="@+id/registrationDHTV"
+        android:layout_width="330dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/roboto"
+        android:textSize="42sp"
+        android:text="Permiso\n/\nVacaciones"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@color/light_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateNowTV"
+        android:visibility="invisible" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

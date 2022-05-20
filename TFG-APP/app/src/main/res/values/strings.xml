@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TFG Project</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="registro_horario">Registro Horario</string>
+    <string name="login">Login</string>
+    <string name="nueva_password">Nueva password</string>
+</resources>

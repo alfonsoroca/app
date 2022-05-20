@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "133361552695",
+    "firebase_url": "https://tfg-project-alfonso-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "tfg-project-alfonso",
+    "storage_bucket": "tfg-project-alfonso.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133361552695:android:c36411370211863ae8deb2",
+        "android_client_info": {
+          "package_name": "com.example.tfgproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133361552695-fv9r3acpg6on22luobefsf5dme3ru24u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvq3K3CaaXcdmXz53F4j-V1IhJHG30qW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133361552695-fv9r3acpg6on22luobefsf5dme3ru24u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

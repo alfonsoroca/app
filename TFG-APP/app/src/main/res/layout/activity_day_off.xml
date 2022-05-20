@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DayOffActivity"
+    android:background="@color/color_background">
+
+    <RelativeLayout
+        style="@style/headerRLO"
+        android:id="@+id/dayOffRL"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/header"
+            android:text="Solicitud de permiso" />
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/dofReasonIT"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="96dp"
+        android:ems="10"
+        android:hint="Motivo"
+        android:fontFamily="@font/roboto"
+        android:textColorHint="#546E7A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dayOffRL" />
+
+    <TextView
+        android:id="@+id/dofDateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/color_primary_dark"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dofReasonIT"
+        android:layout_marginTop="64dp" />
+
+    <Button
+        android:id="@+id/dofSelectDateBT"
+        android:layout_width="271dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button_round_orange"
+        android:text="Seleccionar fecha"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dofDateTV"
+        android:layout_marginTop="64dp"/>
+
+    <Button
+        android:id="@+id/dofConfirmDateBT"
+        android:layout_width="271dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button_round_green"
+        android:text="Solicitar permiso"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dofSelectDateBT"
+        android:layout_marginTop="48dp"/>
+
+    <Button
+        android:id="@+id/dofBackMenuBT"
+        android:layout_width="271dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/button_round_dark"
+        android:text="volver al menu"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/color_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dofConfirmDateBT" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

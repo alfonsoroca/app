@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangePassActivity"
+    android:background="@color/color_background">
+
+    <RelativeLayout
+        style="@style/headerRLO"
+        android:id="@+id/newPassRL"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/header"
+            android:text="Solicitud de contraseña" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="211dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newPassRL"
+        app:srcCompat="@drawable/new_password"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="A continuación, introduce el correo electrónico del que deseas reestablecer la contraseña."
+        android:textAlignment="textStart"
+        android:fontFamily="@font/roboto"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/emailForgotET"
+        android:layout_width="300dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/shape_edit_rounded"
+        android:ems="10"
+        android:hint="Email"
+        android:autofillHints=""
+        android:fontFamily="@font/roboto"
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/color_blue_dark"
+        android:textColorHint="@color/color_primary"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <Button
+        android:id="@+id/changePassBT"
+        android:layout_width="271dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/button_round_orange"
+        android:text="Solicitar"
+        android:fontFamily="@font/roboto"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailForgotET" />
+
+    <Button
+        android:id="@+id/changePassBackBT"
+        android:layout_width="271dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button_round_dark"
+        android:fontFamily="@font/roboto"
+        android:text="Volver"
+        android:textColor="@color/color_background"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changePassBT"
+        android:layout_marginTop="48dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HolidayActivity"
+    android:background="@color/color_background">
+
+    <RelativeLayout
+        style="@style/headerRLO"
+        android:id="@+id/holidayRL"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/header"
+            android:text="Solicitud de vacaciones" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/holidayStartDateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/teal_700"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/holidayRL"
+        android:layout_marginTop="48dp" />
+
+    <Button
+        android:id="@+id/holidaySelectStartDateBT"
+        android:layout_width="271dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button_round_dark_grey"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/white"
+        android:text="Seleccionar fecha inicio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/holidayStartDateTV"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/holidayEndDateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text=""
+        android:textColor="@color/color_red"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/holidaySelectStartDateBT"
+        android:layout_marginTop="32dp"/>
+
+    <Button
+        android:id="@+id/holidaySelectEndDateBT"
+        android:layout_width="271dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button_round_dark_grey"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/white"
+        android:text="Seleccionar fecha final"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/holidayEndDateTV"
+        android:layout_marginTop="32dp"/>
+
+    <Button
+        android:id="@+id/holidayConfirmDateBT"
+        android:layout_width="271dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button_round_green"
+        android:fontFamily="@font/roboto"
+        android:text="Solicitar vacaciones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/holidaySelectEndDateBT"
+        android:layout_marginTop="80dp"/>
+
+    <Button
+        android:id="@+id/holidayBackMenuBT"
+        android:layout_width="271dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/button_round_dark"
+        android:text="volver al menu"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/color_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/holidayConfirmDateBT" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
